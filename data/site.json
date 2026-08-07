@@ -1,15 +1,15 @@
 {
-  "hero_title": "Chima Coffee",
-  "hero_subtitle": "Café de spécialité & pâtisseries maison",
-  "hero_image": "/images/hero-interieur.jpg",
-  "about_image": "/images/about-placeholder.jpg",
-  "about_text": "En plein cœur du 11e arrondissement, Chima propose des cafés de spécialité, des boissons signature autour du matcha, ainsi que des pâtisseries préparées chaque matin sur place.",
-  "hours_weekday": "8h – 18h",
-  "hours_weekend": "9h – 19h",
-  "address": "12 rue des Tanneurs, 75011 Paris",
-  "metro": "Oberkampf ou Parmentier",
-  "phone": "01 42 00 00 00",
-  "email": "contact@chima-paris.fr",
+  "about_image": "/images/hero-interieur.jpg",
+  "phone": "0909000",
   "map_embed_bbox": "2.365,48.855,2.385,48.865",
-  "map_marker": "48.860,2.375"
+  "hero_title": "Chima Coffee",
+  "address": "8 rue du Moulin Joly, 75011 Paris",
+  "hero_image": "/images/logo.jpg",
+  "hours_weekend": "8h – 2h",
+  "hours_weekday": "8h – 2h",
+  "metro": "Belleville ou Couronnes",
+  "email": "contact@chima-paris.fr",
+  "map_marker": "48.860,2.375",
+  "hero_subtitle": "Coffee shop & pâtisseries maison",
+  "about_text": "Situé dans le 11e arrondissement de Paris, Chima propose des matchas, des cafés, des smoothies ainsi que des pâtisseries faites maison."
 }
