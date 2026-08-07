@@ -1,42 +1,159 @@
 {
   "categories": [
     {
-      "name": "Signature",
+      "name": "Matcha Classiques",
       "featured": true,
       "items": [
-        { "name": "Matcha Chima", "price": "5,50 €", "description": "Matcha cérémonie, lait d'avoine, une touche de miel.", "image": "/images/matcha-placeholder.jpg" },
-        { "name": "Chima Latte", "price": "5,00 €", "description": "Espresso, cannelle, lait entier mousseux.", "image": "/images/latte-placeholder.jpg" },
-        { "name": "Iced Hojicha", "price": "5,20 €", "description": "Thé torréfié japonais, lait au choix, glaçons.", "image": "/images/hojicha-placeholder.jpg" }
+        {
+          "name": "Matcha Latte",
+          "price": "6,20 €",
+          "description": "",
+          "image": "/images/matcha-placeholder.jpg"
+        },
+        {
+          "name": "Matcha Vanille",
+          "price": "6,50 €",
+          "description": "",
+          "image": "/images/latte-placeholder.jpg"
+        },
+        {
+          "name": "Matcha Chocolat Blanc",
+          "price": "6,50 €",
+          "description": "",
+          "image": "/images/hojicha-placeholder.jpg"
+        }
       ]
     },
     {
-      "name": "Café",
-      "featured": false,
+      "name": "Matcha Fruités",
+      "featured": true,
       "items": [
-        { "name": "Espresso", "price": "2,50 €", "description": "Simple ou double, torréfaction maison." },
-        { "name": "Flat White", "price": "4,50 €", "description": "Double ristretto, lait micro-moussé." },
-        { "name": "Cappuccino", "price": "4,20 €", "description": "Espresso, mousse de lait dense, cacao." },
-        { "name": "Café allongé", "price": "3,00 €", "description": "Extraction longue, tasse généreuse." },
-        { "name": "Iced Latte", "price": "4,80 €", "description": "Espresso, lait froid, glaçons." }
+        {
+          "name": "Matcha Framboise",
+          "price": "6,90 €",
+          "description": "Simple ou double, torréfaction maison."
+        },
+        {
+          "name": "Matcha Fraise",
+          "price": "6,90 €",
+          "description": ""
+        },
+        {
+          "name": "Matcha Mangue",
+          "price": "6,90 €",
+          "description": ""
+        },
+        {
+          "name": "Matcha Banane",
+          "price": "6,90 €",
+          "description": ""
+        },
+        {
+          "name": "Matcha Eau de Coco",
+          "price": "6,90 €",
+          "description": ""
+        },
+        {
+          "name": "Matcha Myrtille ",
+          "price": "6,90 €"
+        }
       ]
     },
     {
-      "name": "Thé & infusions",
       "featured": false,
+      "name": "Suppléments",
       "items": [
-        { "name": "Thé vert sencha", "price": "3,80 €", "description": "Infusion douce, notes végétales." },
-        { "name": "Chai maison", "price": "4,50 €", "description": "Épices infusées, lait chaud." },
-        { "name": "Infusion menthe", "price": "3,50 €", "description": "Menthe fraîche, servie chaude ou glacée." }
+        {
+          "name": "Lait avoine",
+          "price": "0,50 €"
+        },
+        {
+          "name": "Lait coco",
+          "price": "0,50 €"
+        },
+        {
+          "name": "Lait amande",
+          "price": "0,50 €"
+        },
+        {
+          "name": "Cloud ",
+          "price": "0,50 €"
+        },
+        {
+          "name": "Chocolat Blanc ",
+          "price": "0,50 €"
+        }
       ]
     },
     {
-      "name": "Pâtisseries",
+      "name": "Smoothie Bar ",
+      "featured": true,
+      "items": [
+        {
+          "name": "Pink Berry",
+          "price": "7,50 €",
+          "description": ""
+        },
+        {
+          "name": "Tropical Dream",
+          "price": "7,50 €",
+          "description": ""
+        },
+        {
+          "name": "Green Energy ",
+          "price": "7,50 €",
+          "description": ""
+        },
+        {
+          "name": "Banana Boost",
+          "price": "7,50 €"
+        }
+      ]
+    },
+    {
+      "name": "Cofee Bar",
       "featured": false,
       "items": [
-        { "name": "Cookie miso-chocolat", "price": "3,80 €", "description": "Recette maison, croustillant à l'extérieur." },
-        { "name": "Banana bread", "price": "4,00 €", "description": "Moelleux, éclats de noix de pécan." },
-        { "name": "Croissant", "price": "2,80 €", "description": "Pur beurre, livré chaque matin." },
-        { "name": "Cannelé", "price": "2,50 €", "description": "Croûte caramélisée, cœur tendre." }
+        {
+          "name": "Expresso",
+          "price": "2,50 €",
+          "description": ""
+        },
+        {
+          "name": "Double Expresso ",
+          "price": "3,50 €",
+          "description": ""
+        },
+        {
+          "name": "Allongé ",
+          "price": "3,50 €",
+          "description": ""
+        },
+        {
+          "name": "Macchiato",
+          "price": "3,80 €",
+          "description": ""
+        },
+        {
+          "name": "Cortado ",
+          "price": "4,20 €"
+        },
+        {
+          "name": "Cappucino",
+          "price": "4,50 €"
+        },
+        {
+          "name": "Latte",
+          "price": "5,80 €"
+        },
+        {
+          "name": "Iced Latte",
+          "price": "5,80 €"
+        },
+        {
+          "name": "Mocha ",
+          "price": "5,80 €"
+        }
       ]
     }
   ]
