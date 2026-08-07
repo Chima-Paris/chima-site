@@ -66,7 +66,6 @@ footer { padding: 28px 48px; display: flex; justify-content: space-between; alig
 <div class="utility">
   <div class="utility-left">
     <div class="utility-item">📍 <span id="u-address"></span></div>
-    <div class="utility-item">📞 <span id="u-phone"></span></div>
   </div>
   <div class="utility-social">📘 🐦 📷</div>
 </div>
@@ -97,12 +96,10 @@ footer { padding: 28px 48px; display: flex; justify-content: space-between; alig
   <div class="info-text-wrap">
     <div class="info-title wordmark">CHIMA</div>
     <div class="info-para" id="about-text"></div>
-    <div class="info-hours">Lundi au vendredi : <span id="hours-weekday"></span></div>
-    <div class="info-hours">Samedi – dimanche : <span id="hours-weekend"></span></div>
+    <div class="info-hours">Horaires : <span id="hours-weekday"></span></div>
     <div class="info-divider"></div>
     <div class="info-detail"><strong>Adresse :</strong> <span id="detail-address"></span></div>
     <div class="info-detail"><strong>Métro :</strong> <span id="detail-metro"></span></div>
-    <div class="info-detail"><strong>Téléphone :</strong> <span id="detail-phone"></span></div>
     <div class="info-detail"><strong>Email :</strong> <span id="detail-email"></span></div>
     <a class="info-cta" href="/menu.html">Voir le menu →</a>
   </div>
@@ -149,17 +146,14 @@ fetch('/data/site.json')
   .then(r => r.json())
   .then(d => {
     document.getElementById('u-address').textContent = d.address;
-    document.getElementById('u-phone').textContent = d.phone;
     document.getElementById('hero-img').src = d.hero_image;
     document.getElementById('hero-title').textContent = d.hero_title;
     document.getElementById('hero-sub').textContent = d.hero_subtitle;
     document.getElementById('about-img').src = d.about_image;
     document.getElementById('about-text').textContent = d.about_text;
     document.getElementById('hours-weekday').textContent = d.hours_weekday;
-    document.getElementById('hours-weekend').textContent = d.hours_weekend;
     document.getElementById('detail-address').textContent = d.address;
     document.getElementById('detail-metro').textContent = d.metro;
-    document.getElementById('detail-phone').textContent = d.phone;
     document.getElementById('detail-email').textContent = d.email;
     document.getElementById('map-frame').src =
       'https://www.openstreetmap.org/export/embed.html?bbox=' + encodeURIComponent(d.map_embed_bbox) +

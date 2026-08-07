@@ -60,7 +60,6 @@ footer { padding: 28px 48px; display: flex; justify-content: space-between; alig
 <div class="utility">
   <div class="utility-left">
     <div class="utility-item">📍 <span id="u-address"></span></div>
-    <div class="utility-item">📞 <span id="u-phone"></span></div>
   </div>
   <div class="utility-social">📘 🐦 📷</div>
 </div>
@@ -99,7 +98,6 @@ footer { padding: 28px 48px; display: flex; justify-content: space-between; alig
 
 fetch('/data/site.json').then(r => r.json()).then(d => {
   document.getElementById('u-address').textContent = d.address;
-  document.getElementById('u-phone').textContent = d.phone;
 });
 
 fetch('/data/menu.json')
