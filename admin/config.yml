@@ -36,11 +36,9 @@ collections:
           - { label: "Photo hero (grande image du haut)", name: "hero_image", widget: "image" }
           - { label: "Photo section 'À propos'", name: "about_image", widget: "image" }
           - { label: "Texte de présentation", name: "about_text", widget: "text" }
-          - { label: "Horaires semaine", name: "hours_weekday", widget: "string" }
-          - { label: "Horaires week-end", name: "hours_weekend", widget: "string" }
+          - { label: "Horaires", name: "hours_weekday", widget: "string" }
           - { label: "Adresse", name: "address", widget: "string" }
           - { label: "Métro", name: "metro", widget: "string" }
-          - { label: "Téléphone", name: "phone", widget: "string" }
           - { label: "Email", name: "email", widget: "string" }
 
   # --- Menu / carte du café ---
