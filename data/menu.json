@@ -1,0 +1,43 @@
+{
+  "categories": [
+    {
+      "name": "Signature",
+      "featured": true,
+      "items": [
+        { "name": "Matcha Chima", "price": "5,50 €", "description": "Matcha cérémonie, lait d'avoine, une touche de miel.", "image": "/images/matcha-placeholder.jpg" },
+        { "name": "Chima Latte", "price": "5,00 €", "description": "Espresso, cannelle, lait entier mousseux.", "image": "/images/latte-placeholder.jpg" },
+        { "name": "Iced Hojicha", "price": "5,20 €", "description": "Thé torréfié japonais, lait au choix, glaçons.", "image": "/images/hojicha-placeholder.jpg" }
+      ]
+    },
+    {
+      "name": "Café",
+      "featured": false,
+      "items": [
+        { "name": "Espresso", "price": "2,50 €", "description": "Simple ou double, torréfaction maison." },
+        { "name": "Flat White", "price": "4,50 €", "description": "Double ristretto, lait micro-moussé." },
+        { "name": "Cappuccino", "price": "4,20 €", "description": "Espresso, mousse de lait dense, cacao." },
+        { "name": "Café allongé", "price": "3,00 €", "description": "Extraction longue, tasse généreuse." },
+        { "name": "Iced Latte", "price": "4,80 €", "description": "Espresso, lait froid, glaçons." }
+      ]
+    },
+    {
+      "name": "Thé & infusions",
+      "featured": false,
+      "items": [
+        { "name": "Thé vert sencha", "price": "3,80 €", "description": "Infusion douce, notes végétales." },
+        { "name": "Chai maison", "price": "4,50 €", "description": "Épices infusées, lait chaud." },
+        { "name": "Infusion menthe", "price": "3,50 €", "description": "Menthe fraîche, servie chaude ou glacée." }
+      ]
+    },
+    {
+      "name": "Pâtisseries",
+      "featured": false,
+      "items": [
+        { "name": "Cookie miso-chocolat", "price": "3,80 €", "description": "Recette maison, croustillant à l'extérieur." },
+        { "name": "Banana bread", "price": "4,00 €", "description": "Moelleux, éclats de noix de pécan." },
+        { "name": "Croissant", "price": "2,80 €", "description": "Pur beurre, livré chaque matin." },
+        { "name": "Cannelé", "price": "2,50 €", "description": "Croûte caramélisée, cœur tendre." }
+      ]
+    }
+  ]
+}
