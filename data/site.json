@@ -1,27 +1,39 @@
 {
-  "hero_title": "Chima Coffee",
-  "hero_subtitle": "Café de spécialité & pâtisseries maison",
-  "hero_image": "/images/hero-interieur.jpg",
-  "about_image": "/images/about-placeholder.jpg",
-  "about_text": "Situé dans le 11e arrondissement de Paris, Chima propose des matchas, des cafés, des smoothies ainsi que des pâtisseries faites maison.",
-  "hours_weekday": "8h – 2h",
-  "address": "8 rue du Moulin Joly, 75011 Paris",
-  "metro": "Belleville ou Couronnes",
-  "email": "contact@chima-paris.fr",
-  "map_embed_bbox": "2.365,48.855,2.385,48.865",
-  "map_marker": "48.860,2.375",
-  "about_title": "CHIMA",
-  "cta_text": "Voir le menu →",
-  "offers_eyebrow": "Chez Chima",
-  "offers_title": "Ce qu'on propose",
-  "offers_sub": "Un aperçu de la carte — le détail complet est sur la page Menu.",
-  "menu_eyebrow": "Notre carte",
-  "menu_title": "Le menu",
   "menu_sub": "Cafés de spécialité, boissons signature et pâtisseries maison — préparés chaque jour au comptoir.",
+  "offers_eyebrow": "Chez Chima",
+  "about_title": "CHIMA",
+  "menu_eyebrow": "Notre carte",
+  "about_image": "/images/hero-interieur.jpg",
+  "offers_title": "Ce qu'on propose",
   "footer_text": "© 2026 · Coffee shop",
+  "map_embed_bbox": "2.365,48.855,2.385,48.865",
+  "hero_title": "Chima Coffee",
+  "address": "8 rue du Moulin Joly, 75011 Paris",
+  "hero_image": "/images/_-1-.jpeg",
   "offers": [
-    { "icon": "☕", "title": "Café de spécialité", "description": "Espressos, flat whites, cappuccinos — torréfaction sélectionnée avec soin." },
-    { "icon": "🍵", "title": "Boissons signature", "description": "Matcha, hojicha, chai — nos créations maison, chaudes ou glacées." },
-    { "icon": "🥐", "title": "Pâtisseries du jour", "description": "Préparées chaque matin, en quantité limitée." }
-  ]
+    {
+      "icon": "🍵",
+      "title": "Matcha",
+      "description": "Classique ou fruité, nos créations maison."
+    },
+    {
+      "icon": "☕",
+      "title": "Cafés & smoothies",
+      "description": "Expressos, iced lattes et smoothies, pour tous les moments."
+    },
+    {
+      "icon": "🥐",
+      "title": "Cakes & cookies",
+      "description": "Pâtisseries faites maison."
+    }
+  ],
+  "hours_weekday": "8h – 2h",
+  "menu_title": "Le menu",
+  "offers_sub": "Un aperçu de la carte — le détail complet est sur la page Menu.",
+  "metro": "Belleville ou Couronnes",
+  "cta_text": "Voir le menu →",
+  "email": "contact@chima-paris.fr",
+  "map_marker": "48.860,2.375",
+  "hero_subtitle": "Café de spécialité & pâtisseries maison",
+  "about_text": "Situé dans le 11e arrondissement de Paris, Chima propose des matchas, des cafés, des smoothies ainsi que des pâtisseries faites maison."
 }
