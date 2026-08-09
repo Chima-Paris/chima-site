@@ -4,82 +4,85 @@
 <meta charset="UTF-8">
 <title>Chima — Menu</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Inter:wght@300;400;500;600&display=swap');
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { background: #FAF9F5; color: #2C3722; font-family: 'Inter', Arial, sans-serif; }
-.wordmark { font-family: 'Bagel Fat One', cursive; letter-spacing: 0.5px; }
+body { background: #FAFAF7; color: #1C1F17; font-family: 'Inter', Arial, sans-serif; font-weight: 300; }
+.wordmark { font-family: 'Bagel Fat One', cursive; letter-spacing: 0.3px; font-weight: 400; }
+a { text-decoration: none; color: inherit; }
 
-.utility { background: #2C3722; color: #FAF9F5dd; display: flex; align-items: center; justify-content: space-between; padding: 9px 48px; font-size: 12px; }
-.utility-left { display: flex; gap: 26px; align-items: center; }
-.utility-item { display: flex; align-items: center; gap: 7px; }
-.utility-social { display: flex; gap: 14px; font-size: 13px; }
+/* NAV */
+.nav { background: #FAFAF7; padding: 0 56px; display: flex; align-items: center; justify-content: space-between; height: 88px; position: sticky; top: 0; z-index: 10; }
+.logo { display: flex; align-items: center; }
+.logo-img { height: 40px; width: auto; display: block; }
+.nav-links { display: flex; gap: 44px; }
+.nav-link { font-size: 11px; color: #1C1F17; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 500; opacity: 0.55; transition: opacity 0.2s; }
+.nav-link.active { opacity: 1; }
 
-.nav { background: #FAF9F5; border-bottom: 1px solid #2C372218; padding: 0 48px; display: flex; align-items: center; justify-content: space-between; height: 76px; position: sticky; top: 0; z-index: 5; }
-.logo { display: flex; align-items: center; gap: 10px; }
-.logo-img { height: 52px; width: auto; border-radius: 8px; display: block; }
-.logo-text { font-size: 24px; color: #2C3722; }
-.nav-links { display: flex; gap: 30px; }
-.nav-link { font-size: 12px; color: #2C3722aa; letter-spacing: 1px; text-transform: uppercase; font-weight: 700; }
-.nav-link.active { color: #2C3722; border-bottom: 2px solid #7E8876; padding-bottom: 4px; }
+/* PAGE HEADER */
+.page-header { max-width: 1400px; margin: 0 auto; padding: 96px 56px 56px; }
+.page-eyebrow { font-size: 10px; color: #8A8F7A; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 20px; font-weight: 500; }
+.page-title { font-family: 'Inter', Arial, sans-serif; font-weight: 400; font-size: 38px; letter-spacing: -0.3px; margin-bottom: 20px; }
+.page-sub { font-size: 14px; color: #1C1F17aa; max-width: 520px; line-height: 1.75; font-weight: 300; }
 
-.page-hero { background: #2C3722; padding: 54px 48px; text-align: center; }
-.page-hero-eyebrow { font-size: 10px; color: #7E8876; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; font-weight: 700; }
-.page-hero-title { font-family: 'Bagel Fat One', cursive; color: #FAF9F5; font-size: 44px; }
-.page-hero-sub { font-size: 13px; color: #FAF9F599; margin-top: 10px; max-width: 460px; margin-left: auto; margin-right: auto; line-height: 1.7; }
+/* JUMP NAV */
+.jump-nav { max-width: 1400px; margin: 0 auto; display: flex; gap: 36px; flex-wrap: wrap; padding: 0 56px 40px; border-bottom: 1px solid #1C1F1718; }
+.jump-link { font-size: 11px; color: #1C1F1799; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 500; padding-bottom: 6px; border-bottom: 1px solid transparent; cursor: pointer; }
+.jump-link.active { color: #1C1F17; border-bottom-color: #1C1F17; }
 
-.jump-nav { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; padding: 22px 48px; border-bottom: 1px solid #2C372214; }
-.jump-link { font-size: 11px; color: #2C3722aa; letter-spacing: 1px; text-transform: uppercase; font-weight: 700; padding-bottom: 4px; border-bottom: 2px solid transparent; cursor: pointer; }
-.jump-link.active { color: #2C3722; border-bottom-color: #7E8876; }
+/* CATEGORY */
+.menu-wrap { max-width: 900px; margin: 0 auto; padding: 80px 56px; }
+.category { margin-bottom: 88px; }
+.cat-title { font-family: 'Inter', Arial, sans-serif; font-weight: 500; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px; }
+.cat-line { width: 100%; height: 1px; background: #1C1F1718; margin: 20px 0 40px; }
 
-.menu-wrap { max-width: 780px; margin: 0 auto; padding: 56px 48px; }
-.category { margin-bottom: 52px; }
-.cat-title { font-family: 'Bagel Fat One', cursive; font-size: 24px; text-align: center; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
-.cat-underline { width: 46px; height: 3px; background: #7E8876; margin: 0 auto 30px; border-radius: 2px; }
-
-.menu-item { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; padding: 14px 0; }
-.item-name { font-family: 'Bagel Fat One', cursive; font-size: 15px; text-transform: uppercase; letter-spacing: 0.3px; white-space: nowrap; }
-.item-dots { flex: 1; border-bottom: 1px dotted #2C372244; position: relative; top: -4px; }
-.item-price { font-size: 14px; font-weight: 700; color: #2C3722; white-space: nowrap; }
-.item-desc { font-size: 11.5px; color: #2C372277; line-height: 1.6; margin-top: 2px; }
+.menu-item { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; padding: 20px 0; border-bottom: 1px solid #1C1F1712; }
+.menu-item:first-child { padding-top: 0; }
+.item-name { font-family: 'Inter', Arial, sans-serif; font-weight: 400; font-size: 15px; letter-spacing: 0.1px; white-space: nowrap; }
+.item-dots { flex: 1; }
+.item-price { font-size: 13px; font-weight: 400; color: #1C1F17; white-space: nowrap; letter-spacing: 0.3px; }
+.item-desc { font-size: 12px; color: #1C1F1788; line-height: 1.6; font-weight: 300; margin-top: 3px; max-width: 480px; }
 .item-row { width: 100%; }
 
-.signature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.sig-item { text-align: center; }
-.sig-img { height: 100px; border-radius: 14px; background: #7E887633; overflow: hidden; margin-bottom: 12px; }
+/* SIGNATURE — larger, image-forward */
+.signature-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.sig-item { display: flex; flex-direction: column; }
+.sig-img { aspect-ratio: 4/5; background: #EDECE4; overflow: hidden; margin-bottom: 20px; }
 .sig-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.sig-name { font-family: 'Bagel Fat One', cursive; font-size: 14px; text-transform: uppercase; margin-bottom: 4px; }
-.sig-price { font-size: 12px; font-weight: 700; color: #3B4631; margin-bottom: 6px; }
-.sig-desc { font-size: 11px; color: #2C372277; line-height: 1.6; }
+.sig-top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; }
+.sig-name { font-family: 'Inter', Arial, sans-serif; font-weight: 500; font-size: 14px; }
+.sig-price { font-size: 13px; font-weight: 400; color: #1C1F17; }
+.sig-desc { font-size: 12px; color: #1C1F1788; line-height: 1.6; font-weight: 300; }
 
-footer { padding: 28px 48px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #2C372214; background: #FAF9F5; }
-.footer-text { font-size: 10px; color: #2C372255; letter-spacing: 0.5px; }
+/* FOOTER */
+footer { border-top: 1px solid #1C1F1718; padding: 40px 56px; display: flex; justify-content: space-between; align-items: center; }
+.footer-logo { font-family: 'Bagel Fat One', cursive; font-size: 15px; letter-spacing: 0.5px; }
+.footer-text { font-size: 10px; color: #1C1F1766; letter-spacing: 0.5px; font-weight: 300; }
+
+@media (max-width: 860px) {
+  .signature-list { grid-template-columns: 1fr; }
+  .nav, .page-header, .jump-nav, .menu-wrap, footer { padding-left: 24px; padding-right: 24px; }
+  .page-title { font-size: 34px; }
+}
 </style>
 </head>
 <body>
 
-<div class="utility">
-  <div class="utility-left">
-    <div class="utility-item">📍 <span id="u-address"></span></div>
-  </div>
-  <div class="utility-social">📘 🐦 📷</div>
-</div>
-
 <nav class="nav">
-  <div class="logo">
+  <a class="logo" href="/">
     <img class="logo-img" src="/images/logo.jpg" alt="Chima">
-  </div>
+  </a>
   <div class="nav-links">
     <a class="nav-link" href="/">Accueil</a>
     <a class="nav-link active" href="/menu.html">Menu</a>
-    <div class="nav-link">À propos</div>
-    <div class="nav-link">Nous trouver</div>
+    <a class="nav-link" href="/#about-anchor">À propos</a>
+    <a class="nav-link" href="/#location-anchor">Nous trouver</a>
   </div>
 </nav>
 
-<div class="page-hero">
-  <div class="page-hero-eyebrow">Notre carte</div>
-  <div class="page-hero-title wordmark">Le menu</div>
-  <div class="page-hero-sub">Cafés de spécialité, boissons signature et pâtisseries maison — préparés chaque jour au comptoir.</div>
+<div class="page-header">
+  <div class="page-eyebrow" id="menu-eyebrow">Notre carte</div>
+  <div class="page-title" id="menu-title">Le menu</div>
+  <div class="page-sub" id="menu-sub"></div>
 </div>
 
 <div class="jump-nav" id="jump-nav"></div>
@@ -87,17 +90,16 @@ footer { padding: 28px 48px; display: flex; justify-content: space-between; alig
 <div class="menu-wrap" id="menu-wrap"></div>
 
 <footer>
-  <div class="logo-text wordmark" style="font-size:15px;">chima</div>
-  <div class="footer-text">© 2026 · Coffee shop</div>
+  <div class="footer-logo">chima</div>
+  <div class="footer-text" id="footer-text">© 2026 · Coffee shop</div>
 </footer>
 
 <script>
-// Charge la carte depuis data/menu.json et construit les sections automatiquement.
-// C'est ce fichier que tu modifies depuis /admin (interface Decap CMS) pour
-// ajouter, retirer ou modifier des produits — sans toucher au code.
-
 fetch('/data/site.json').then(r => r.json()).then(d => {
-  document.getElementById('u-address').textContent = d.address;
+  document.getElementById('menu-eyebrow').textContent = d.menu_eyebrow || 'Notre carte';
+  document.getElementById('menu-title').textContent = d.menu_title || 'Le menu';
+  document.getElementById('menu-sub').textContent = d.menu_sub || '';
+  document.getElementById('footer-text').textContent = d.footer_text || '© 2026 · Coffee shop';
 });
 
 fetch('/data/menu.json')
@@ -107,25 +109,22 @@ fetch('/data/menu.json')
     const jump = document.getElementById('jump-nav');
 
     data.categories.forEach((cat, i) => {
-      // Lien de navigation rapide
       const jumpLink = document.createElement('div');
       jumpLink.className = 'jump-link' + (i === 0 ? ' active' : '');
       jumpLink.textContent = cat.name;
       jumpLink.onclick = () => document.getElementById('cat-' + i).scrollIntoView({ behavior: 'smooth' });
       jump.appendChild(jumpLink);
 
-      // Section catégorie
       const section = document.createElement('div');
       section.className = 'category';
       section.id = 'cat-' + i;
 
       let itemsHTML = '';
       if (cat.featured) {
-        itemsHTML = '<div class="signature-grid">' + cat.items.map(item => `
+        itemsHTML = '<div class="signature-list">' + cat.items.map(item => `
           <div class="sig-item">
             <div class="sig-img">${item.image ? `<img src="${item.image}" alt="${item.name}">` : ''}</div>
-            <div class="sig-name">${item.name}</div>
-            <div class="sig-price">${item.price}</div>
+            <div class="sig-top"><div class="sig-name">${item.name}</div><div class="sig-price">${item.price}</div></div>
             <div class="sig-desc">${item.description || ''}</div>
           </div>`).join('') + '</div>';
       } else {
@@ -133,7 +132,6 @@ fetch('/data/menu.json')
           <div class="item-row">
             <div class="menu-item">
               <div class="item-name">${item.name}</div>
-              <div class="item-dots"></div>
               <div class="item-price">${item.price}</div>
             </div>
             ${item.description ? `<div class="item-desc">${item.description}</div>` : ''}
@@ -142,7 +140,7 @@ fetch('/data/menu.json')
 
       section.innerHTML = `
         <div class="cat-title">${cat.name}</div>
-        <div class="cat-underline"></div>
+        <div class="cat-line"></div>
         ${itemsHTML}
       `;
       wrap.appendChild(section);
