@@ -11,11 +11,13 @@ body { background: #FAFAF7; color: #1C1F17; font-family: 'Inter', Arial, sans-se
 a { text-decoration: none; color: inherit; }
 
 /* NAV */
-.nav { background: #FAFAF7; padding: 0 56px; display: flex; align-items: center; justify-content: space-between; height: 88px; position: sticky; top: 0; z-index: 10; }
-.logo { display: flex; align-items: center; }
-.logo-img { height: 40px; width: auto; display: block; }
+.nav { background: transparent; padding: 0 56px; display: flex; align-items: center; justify-content: space-between; height: 88px; position: fixed; top: 0; left: 0; right: 0; z-index: 10; transition: background 0.3s ease, border-color 0.3s ease; border-bottom: 1px solid transparent; }
+.nav.scrolled { background: #FAFAFAee; backdrop-filter: blur(8px); border-bottom: 1px solid #1C1F1712; }
+.logo { display: flex; align-items: center; font-family: 'Bagel Fat One', cursive; font-size: 19px; color: #FAFAF7; letter-spacing: 0.3px; transition: color 0.3s ease; }
+.nav.scrolled .logo { color: #1C1F17; }
 .nav-links { display: flex; gap: 44px; }
-.nav-link { font-size: 11px; color: #1C1F17; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 500; opacity: 0.55; transition: opacity 0.2s; }
+.nav-link { font-size: 11px; color: #FAFAF7; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 500; opacity: 0.75; transition: opacity 0.2s, color 0.3s ease; }
+.nav.scrolled .nav-link { color: #1C1F17; }
 .nav-link.active { opacity: 1; }
 
 /* HERO */
@@ -28,9 +30,9 @@ a { text-decoration: none; color: inherit; }
 .hero-sub { font-size: 14px; color: #FAFAF7cc; margin-top: 16px; font-weight: 300; letter-spacing: 0.2px; max-width: 480px; line-height: 1.6; }
 
 /* ABOUT — clean, no card background */
-.about { max-width: 1400px; margin: 0 auto; padding: 140px 56px; display: grid; grid-template-columns: 1fr 1fr; gap: 96px; align-items: center; }
-.about-img { position: relative; aspect-ratio: 4/5; overflow: hidden; background: #EDECE4; }
-.about-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.about { max-width: 1400px; margin: 0 auto; padding: 100px 56px; display: grid; grid-template-columns: 1fr 1fr; gap: 96px; align-items: start; }
+.about-img { position: relative; height: 520px; overflow: hidden; background: #EDECE4; }
+.about-img img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
 .about-eyebrow { font-size: 10px; color: #8A8F7A; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 20px; font-weight: 500; }
 .about-title { font-family: 'Inter', Arial, sans-serif; font-weight: 400; font-size: 26px; letter-spacing: -0.2px; margin-bottom: 24px; color: #1C1F17; }
 .about-text { font-size: 15px; color: #1C1F17aa; line-height: 1.85; margin-bottom: 36px; font-weight: 300; max-width: 440px; }
@@ -73,9 +75,7 @@ footer { border-top: 1px solid #1C1F1718; padding: 40px 56px; display: flex; jus
 <body>
 
 <nav class="nav">
-  <a class="logo" href="/">
-    <img class="logo-img" src="/images/logo.jpg" alt="Chima">
-  </a>
+  <a class="logo" href="/">chima</a>
   <div class="nav-links">
     <a class="nav-link active" href="/">Accueil</a>
     <a class="nav-link" href="/menu.html">Menu</a>
@@ -166,6 +166,12 @@ fetch('/data/site.json')
     });
   })
   .catch(err => console.error('Erreur de chargement des données du site :', err));
+</script>
+
+<script>
+window.addEventListener('scroll', () => {
+  document.querySelector('.nav').classList.toggle('scrolled', window.scrollY > 60);
+});
 </script>
 
 </body>
