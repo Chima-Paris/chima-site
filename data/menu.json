@@ -147,6 +147,37 @@
           "price": "5,80 €"
         }
       ]
+    },
+    {
+      "featured": false,
+      "name": "Lounge",
+      "items": [
+        {
+          "name": "Formule Classique",
+          "price": "25,00 €",
+          "description": "Chicha + soft"
+        },
+        {
+          "name": "Formule Matcha",
+          "price": "27,50 €",
+          "description": "Chicha + Matcha "
+        },
+        {
+          "name": "Formule Smoothie",
+          "price": "28,00 €",
+          "description": "Chicha + Smoothie"
+        },
+        {
+          "name": "Formule Gourmande",
+          "price": "30,00 €",
+          "description": "Chicha + Soft + Dessert"
+        },
+        {
+          "name": "Formule Signature Gourmande",
+          "price": "32,00 €",
+          "description": "Chicha + Matcha ou Smoothie + Dessert "
+        }
+      ]
     }
   ]
 }
