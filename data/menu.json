@@ -64,7 +64,15 @@
       "name": "Suppléments",
       "items": [
         {
-          "name": "Lait Avoine - Amande - Coco / Cloud - Chocolat blanc",
+          "name": "Lait végétal ( Avoine - Amande - Coco ) ",
+          "price": "0,50 €"
+        },
+        {
+          "name": "Cloud ",
+          "price": "0,50 €"
+        },
+        {
+          "name": "Chocolat blanc",
           "price": "0,50 €"
         }
       ]
