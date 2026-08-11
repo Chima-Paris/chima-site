@@ -25,6 +25,11 @@
       "icon": "🥐",
       "title": "Cakes & cookies",
       "description": "Pâtisseries faites maison."
+    },
+    {
+      "title": "Lounge",
+      "description": "Chichas et formules gourmandes",
+      "icon": "💨"
     }
   ],
   "hours_weekday": "8h – 2h",
